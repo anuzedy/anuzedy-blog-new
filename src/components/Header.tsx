@@ -35,7 +35,7 @@ export default function Header(props: HeaderProps) {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+          <PlainLink to="/">{title}</PlainLink>
         </Typography>
         <IconButton>
           <SearchIcon />
