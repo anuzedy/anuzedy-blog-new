@@ -1,8 +1,6 @@
 import * as React from "react";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 import { Link as RouterLink } from "react-router-dom";
 import styled from "styled-components";
@@ -25,7 +23,6 @@ export default function Header(props: HeaderProps) {
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Button size="small">Subscribe</Button>
         <Typography
           component="h2"
           variant="h5"
@@ -36,9 +33,6 @@ export default function Header(props: HeaderProps) {
         >
           <PlainLink to="/">{title}</PlainLink>
         </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
         <PlainLink to="/signin">
           <Button variant="outlined" size="small">
             로그인

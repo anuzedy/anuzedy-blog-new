@@ -14,8 +14,6 @@ import Paper from "@mui/material/Paper";
 import Link from "@mui/material/Link";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { mainListItems, secondaryListItems } from "./listItems";
-import Chart from "./Chart";
-import Deposits from "./Deposits";
 import Orders from "./Orders";
 import AppLayout from "./AppLayout";
 
@@ -108,35 +106,8 @@ function DashboardContent() {
               overflow: "auto",
             }}
           >
-            <Toolbar />
             <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
               <Grid container spacing={3}>
-                {/* Chart */}
-                <Grid item xs={12} md={8} lg={9}>
-                  <Paper
-                    sx={{
-                      p: 2,
-                      display: "flex",
-                      flexDirection: "column",
-                      height: 240,
-                    }}
-                  >
-                    <Chart />
-                  </Paper>
-                </Grid>
-                {/* Recent Deposits */}
-                <Grid item xs={12} md={4} lg={3}>
-                  <Paper
-                    sx={{
-                      p: 2,
-                      display: "flex",
-                      flexDirection: "column",
-                      height: 240,
-                    }}
-                  >
-                    <Deposits />
-                  </Paper>
-                </Grid>
                 {/* Recent Orders */}
                 <Grid item xs={12}>
                   <Paper
