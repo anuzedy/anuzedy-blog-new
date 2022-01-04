@@ -16,6 +16,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { mainListItems, secondaryListItems } from "./listItems";
 import Orders from "./Orders";
 import AppLayout from "./AppLayout";
+import Content from "./Content";
 
 function Copyright(props: any) {
   return (
@@ -117,6 +118,7 @@ function DashboardContent() {
                   </Paper>
                 </Grid>
               </Grid>
+              <Content />
               <Copyright sx={{ pt: 4 }} />
             </Container>
           </Box>
